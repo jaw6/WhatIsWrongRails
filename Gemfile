@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'wrong_rails', group: :test, path: '../wrong_rails'
+gem 'mocha', require: false, group: :test
