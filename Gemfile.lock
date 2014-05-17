@@ -1,3 +1,10 @@
+PATH
+  remote: ../wrong_rails
+  specs:
+    wrong_rails (0.0.1)
+      rails (~> 4.0)
+      wrong (~> 0.7.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -54,6 +62,7 @@ GEM
     minitest (5.3.4)
     multi_json (1.10.0)
     polyglot (0.3.4)
+    predicated (0.2.6)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -75,6 +84,11 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    ruby2ruby (2.1.0)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.0)
+    ruby_parser (3.6.0)
+      sexp_processor (~> 4.1)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -84,6 +98,7 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    sexp_processor (4.4.3)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -108,6 +123,12 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    wrong (0.7.1)
+      diff-lcs (~> 1.2.5)
+      predicated (~> 0.2.6)
+      ruby2ruby (>= 2.0.1)
+      ruby_parser (>= 3.0.1)
+      sexp_processor (>= 4.0)
 
 PLATFORMS
   ruby
@@ -123,3 +144,4 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)
+  wrong_rails!
